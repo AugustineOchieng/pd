@@ -10,3 +10,6 @@ function gameInit() {
   roundScore = 0;
   totalScore = [0, 0];
   goal = 100;
+
+  document.getElementById("dice1").textContent = "";
+  document.getElementById("dice2").textContent = "";

@@ -79,3 +79,12 @@ document.getElementById("roll").addEventListener("click", function () {
       }
 
     });
+    function nextPlayer() {
+      roundScore = 0;
+      document.getElementById("current-score-" + player).innerHTML = roundScore;
+      document.getElementById("player-" + player).classList.remove("active");
+      (player === 0) ? player = 1 : player = 0;
+      document.getElementById("player-" + player).classList.add("active");
+      document.getElementById("dice1").innerHTML = "";
+      document.getElementById("dice2").innerHTML = "";
+    }

@@ -49,3 +49,33 @@ document.getElementById("roll").addEventListener("click", function () {
     document.getElementById("dice1").innerHTML = dice1;
 
   //
+    if (dice1 === 1) {
+
+      nextPlayer();
+    }
+
+    //UI Logic
+
+    document.getElementById("hold").addEventListener("click", function () {
+      if (gamePlay) {
+
+        // 1. Round score gets added to totalScore and round score is cleared
+        totalScore[player] += roundScore;
+
+        // 2. Check if total score of a player is greater than the goal and update accordingly
+        if (totalScore[player] >= goal) {
+          document.getElementById("total-" + player).innerHTML = totalScore[player];
+          document.getElementById("player-label-" + player).innerHTML = "WINNER!";
+          document.getElementById("player-label-" + player).classList.add("font-red");
+          gamePlay = false;
+        } else {
+          document.getElementById("total-" + player).innerHTML = totalScore[player];
+          nextPlayer();
+        }
+        document.getElementById("dice1").innerHTML = "";
+        document.getElementById("dice2").innerHTML = "";
+
+
+      }
+
+    });

@@ -65,13 +65,9 @@ h1 {
   padding-top: 17px;
 }
 
+#diceimg {}
 
 
-/*--------------------
-
-	  JAVASCRIPT
-
---------------------*/
 
 .active {
   background-color: #e8e8e8;

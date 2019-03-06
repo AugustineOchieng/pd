@@ -18,3 +18,25 @@ h1 {
   font-family: 'Monoton', serif;
   text-decoration: underline;
 }
+.container p {
+  text-align: center;
+}
+
+.container .col-md-5 {
+  padding: 30px 0;
+}
+
+.container #total-0,
+.container #total-1 {
+  margin: 80px;
+  font-size: 86px;
+}
+
+.container #current-0,
+.container #current-1 {
+  margin: 0 auto;
+  height: 70px;
+  width: 80px;
+  background-color: red;
+  color: #fff;
+}

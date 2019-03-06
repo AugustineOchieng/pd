@@ -13,3 +13,8 @@ body {
   opacity: 0.8;
   font-family: 'Amiri', serif;
 }
+h1 {
+  text-align: center;
+  font-family: 'Monoton', serif;
+  text-decoration: underline;
+}

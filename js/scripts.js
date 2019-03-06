@@ -11,5 +11,5 @@ function gameInit() {
   totalScore = [0, 0];
   goal = 100;
 
-  document.getElementById("dice1").textContent = "";
-  document.getElementById("dice2").textContent = "";
+  document.getElementById("dice1").innerHTML = "";
+  document.getElementById("dice2").innerHTML = "";

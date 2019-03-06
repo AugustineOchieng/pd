@@ -48,7 +48,7 @@ document.getElementById("roll").addEventListener("click", function () {
     // 3. Display numbers on their respective dice
     document.getElementById("dice1").innerHTML = dice1;
 
-  //
+    //
     if (dice1 === 1) {
 
       nextPlayer();
@@ -72,11 +72,13 @@ document.getElementById("roll").addEventListener("click", function () {
           document.getElementById("total-" + player).innerHTML = totalScore[player];
           nextPlayer();
         }
-        document.getElementById("dice1").innerHTML = "";
-        document.getElementById("dice2").innerHTML = "";
+        
+      // 3. Clear Dice
+      document.getElementById("dice1").innerHTML = "";
+      document.getElementById("dice2").innerHTML = "";
 
 
-      }
+    }
 
     });
     function nextPlayer() {

@@ -12,4 +12,3 @@ function gameInit() {
   goal = 100;
 
   document.getElementById("dice1").innerHTML = "";
-  document.getElementById("dice2").innerHTML = "";
